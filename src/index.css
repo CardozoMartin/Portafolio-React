@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: #062338;
+    overflow-x: hidden;
+    
+}
+h1{
+    font-size: 3rem!important;
+}
