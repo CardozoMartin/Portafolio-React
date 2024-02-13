@@ -2,7 +2,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
+ 
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
@@ -25,7 +25,7 @@ const Carrusel = () => {
     <Carousel className="w-full  mx-auto">
       <CarouselContent className="-ml-1">
         {array.map((item, index) => (
-          <CarouselItem key={index} className=" md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className=" sm:basis-1/8 lg:basis-1/5">
             <div className="p-1">
               <Card className="bg-">
                 <CardContent className="flex aspect-square items-center justify-center p-6">
@@ -37,7 +37,7 @@ const Carrusel = () => {
         ))}
       </CarouselContent>
       <CarouselPrevious />
-      <CarouselNext />
+      
     </Carousel>
   )
 }

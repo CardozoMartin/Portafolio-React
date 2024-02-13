@@ -4,8 +4,8 @@
 
 
 body{
-    background-color: #062338;
-    overflow-x: hidden;
+    background: rgb(0,0,0);
+background: linear-gradient(352deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(6,35,56,1) 100%);
     
 }
 h1{

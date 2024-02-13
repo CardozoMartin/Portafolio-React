@@ -1,17 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-
-import './index.css'
-import Router from './Router.jsx'
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./index.css";
+import Router from "./Router.jsx";
 import { ThemeProvider } from "@material-tailwind/react";
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider>
-
-    <Router />
+      <Router />
     </ThemeProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

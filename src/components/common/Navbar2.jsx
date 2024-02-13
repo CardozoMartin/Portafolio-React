@@ -29,22 +29,29 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
- 
+
 const navListMenuItems = [
   {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
+    title: "Grill & Thrill",
+    description: "Sitio web Full Stack MERN ",
     icon: SquaresPlusIcon,
-    to:"/mobile"
-  },]
- 
+    to: "/appRes",
+  },
+  {
+    title: "Reflix",
+    description: "App de peliculas js,css y html",
+    icon: SquaresPlusIcon,
+    to: "/reflix",
+  },
+];
+
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description,to }, key) => (
+    ({ icon, title, description, to }, key) => (
       <Link to={to} key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
+        <MenuItem className="flex items-center gap-3 rounded-lg text-white">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
             {" "}
             {React.createElement(icon, {
@@ -56,7 +63,7 @@ function NavListMenu() {
             <Typography
               variant="h6"
               color="blue-gray"
-              className="flex items-center text-sm font-bold"
+              className="flex items-center text-sm font-bold text-white"
             >
               {title}
             </Typography>
@@ -66,13 +73,12 @@ function NavListMenu() {
             >
               {description}
             </Typography>
-            
           </div>
         </MenuItem>
       </Link>
-    ),
+    )
   );
- 
+
   return (
     <React.Fragment>
       <Menu
@@ -82,14 +88,14 @@ function NavListMenu() {
         placement="bottom"
         allowHover={true}
       >
-        <MenuHandler>
+        <MenuHandler className="">
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 font-medium  text-white"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Resources
+              Proyectos
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -105,22 +111,22 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-gray-900 text-white">
+          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0 text-white">
             {renderItems}
           </ul>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden">
+      <div className="block lg:hidden text-white">
         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
       </div>
     </React.Fragment>
   );
 }
- 
+
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
       <Typography
         as="a"
         href="#"
@@ -128,7 +134,11 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
+        <Link to="/">
+          <ListItem className="flex items-center  gap-2 py-2 pr-4 text-white">
+            Home
+          </ListItem>
+        </Link>
       </Typography>
       <NavListMenu />
       <Typography
@@ -138,39 +148,39 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white">
           Contact Us
         </ListItem>
       </Typography>
     </List>
   );
 }
- 
+
 export function NavbarWithMegaMenu() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
- 
+
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-4 py-2">
+    <Navbar className="mx-auto max-w-screen-xl px-4 py-2 bg-gray-900 ">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-white"
         >
-          Material Tailwind
+          Mi Portafolio
         </Typography>
         <div className="hidden lg:block">
           <NavList />
         </div>
-       
+
         <IconButton
           variant="text"
           color="blue-gray"
@@ -186,7 +196,6 @@ export function NavbarWithMegaMenu() {
       </div>
       <Collapse open={openNav}>
         <NavList />
-        
       </Collapse>
     </Navbar>
   );
