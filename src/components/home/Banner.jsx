@@ -1,6 +1,8 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import logo from "./logo2.svg"
+
 
 export const Banner = () => {
   return (
@@ -46,6 +48,9 @@ export const Banner = () => {
                 </Button>
               </div>
             </div>
+          </div>
+          <div className="mt-3">
+          <img src={`${logo}`} alt="" />
           </div>
         </div>
       </section>

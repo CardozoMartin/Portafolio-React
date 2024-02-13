@@ -2,7 +2,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
- 
+  CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
@@ -21,11 +21,12 @@ const array = ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-
 ];
 const Carrusel = () => {
   return (
-    
-    <Carousel className="w-full  mx-auto">
+    <section className="w-50 mx-auto ">
+
+    <Carousel className="w-full mx-auto">
       <CarouselContent className="-ml-1">
         {array.map((item, index) => (
-          <CarouselItem key={index} className=" sm:basis-1/8 lg:basis-1/5">
+          <CarouselItem key={index} className=" sm:basis-1/1 lg:basis-1/4">
             <div className="p-1">
               <Card className="bg-">
                 <CardContent className="flex aspect-square items-center justify-center p-6">
@@ -37,8 +38,9 @@ const Carrusel = () => {
         ))}
       </CarouselContent>
       <CarouselPrevious />
-      
+      <CarouselNext />
     </Carousel>
+        </section>
   )
 }
 
