@@ -6,6 +6,7 @@ import Home from "./views/Home";
 import AppRestaurante from "./views/AppRestaurante";
 import Reflix from "./views/Reflix";
 import Certificados from "./views/Certificados";
+import "./index.css"
 
 function Router() {
   return (
