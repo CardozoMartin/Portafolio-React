@@ -91,7 +91,7 @@ function NavListMenu() {
         <MenuHandler className="">
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium  text-white"
+              className="flex items-center gap-2 py-2 pr-4 font-medium  text-white font-extrabold"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -135,7 +135,7 @@ function NavList() {
         className="font-medium"
       >
         <Link to="/">
-          <ListItem className="flex items-center  gap-2 py-2 pr-4 text-white">
+          <ListItem className="flex items-center  gap-2 py-2 pr-4 text-white font-extrabold">
             Home
           </ListItem>
         </Link>
@@ -148,10 +148,23 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white hover:text-black font-extrabold">
           Contact Us
         </ListItem>
       </Typography>
+      <Link to="/certificados">
+      <Typography
+        as="a"
+        href="#"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+        >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white font-extrabold">
+          Certificados
+        </ListItem>
+      </Typography>
+        </Link>
     </List>
   );
 }
@@ -167,13 +180,13 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-4 py-2 bg-gray-900 ">
-      <div className="flex items-center justify-between text-blue-gray-900">
+    <Navbar className="mx-auto max-w-screen-xl px-4 py-2 bg-gray-900  fixed-top">
+      <div className="flex items-center justify-between text-blue-gray-900  ">
         <Typography
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-white"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-white font-extrabold"
         >
           Mi Portafolio
         </Typography>

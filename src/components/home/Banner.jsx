@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "./logo2.svg"
 
 
+
 export const Banner = () => {
   return (
     <>
@@ -13,16 +14,17 @@ export const Banner = () => {
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1 className="text-3xl font-extrabold sm:text-4xl text-yellow-100">
-              Hola, Soy Martin Cardozo
-              <strong className="block font-extrabold text-rose-700">
-                {" "}
-                Desarrolador Front-End.{" "}
-              </strong>
+              <span className="text-red-700">Hola,</span> Soy Martin Cardozo
+             
             </h1>
 
             <p className="mt-4 max-w-lg sm:text-xl/relaxed text-yellow-100">
-              "Si lo puedes imaginar, lo puedes programar !!!"
+            Soy un <span className=" font-extrabold text-red-700">desarrollador front-end</span> con experiencia en la creación de interfaces utilizando <span className=" font-extrabold text-red-700">React</span> para aplicaciones web y <span className=" font-extrabold text-red-700">React Native</span> para aplicaciones móviles. Mi enfoque se centra en desarrollar soluciones eficientes y atractivas que mejoren la experiencia del usuario.
             </p>
+            <strong className="block font-extrabold text-red-700">
+                {" "}
+                "SI LO PUEDES IMAGINAR, LO PUEDES PROGRAMAR"{" "}
+              </strong>
             <div className="text-center mt-3 ">
               <div>
                 <Link
