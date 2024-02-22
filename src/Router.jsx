@@ -7,6 +7,7 @@ import AppRestaurante from "./views/AppRestaurante";
 import Reflix from "./views/Reflix";
 import Certificados from "./views/Certificados";
 import "./index.css"
+import { Toaster } from "sonner";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
 
         </Routes>
       </main>
+      <Toaster position="top-right" richColors />
       </BrowserRouter>
 
       <Footer />
