@@ -1,14 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap") * {
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-    
   background: rgb(0, 0, 0);
   background: linear-gradient(
     352deg,
@@ -17,8 +17,8 @@ body {
     rgba(6, 35, 56, 1) 100%
   );
 }
-main{
-    padding-top: 15px;
+main {
+  padding-top: 15px;
 }
 h1 {
   font-size: 3rem !important;

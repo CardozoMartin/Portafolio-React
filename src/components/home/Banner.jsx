@@ -2,10 +2,21 @@ import { buttonVariants } from "@/components/ui/button";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import logo from "./logo2.svg"
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 export const Banner = () => {
+
+  
+    useEffect(() => {
+      AOS.init({
+        duration: 800, // duración de las animaciones en ms
+        easing: "ease", // función de tiempo para la animación
+        once: true, // si se debe ejecutar la animación solo una vez
+      });
+    }, []);
   return (
     <>
       <section className=" content-around relative bg-[url()]  bg-center bg-no-repeat">
@@ -14,14 +25,17 @@ export const Banner = () => {
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1 className="text-3xl font-extrabold sm:text-4xl text-yellow-100">
-              <span className="text-red-700">Hola,</span> Soy Martin Cardozo
+              <span className="text-red-700"  data-aos="fade-down" data-aos-delay="10000">Hola,</span> Soy Mart<span className="animate-bounce text-yellow-600">i</span>n Cardozo
              
             </h1>
 
-            <p className="mt-4 max-w-lg sm:text-xl/relaxed text-yellow-100">
-            Soy un <span className=" font-extrabold text-red-700">desarrollador front-end</span> con experiencia en la creación de interfaces utilizando <span className=" font-extrabold text-red-700">React</span> para aplicaciones web y <span className=" font-extrabold text-red-700">React Native</span> para aplicaciones móviles. Mi enfoque se centra en desarrollar soluciones eficientes y atractivas que mejoren la experiencia del usuario.
+            <p className="mt-4 max-w-lg sm:text-xl/relaxed text-yellow-100" >
+           <span className="fs-2 font-extrabold text-yellow-600" data-aos="fade-up"data-aos-delay="100" >{"{'"}</span > <span data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"> Soy un <span className=" font-extrabold text-red-700">desarrollador front-end</span> con experiencia en la creación de interfaces utilizando <span className=" font-extrabold text-red-700">React</span> para aplicaciones web y <span className=" font-extrabold text-red-700">React Native</span> para aplicaciones móviles. Mi enfoque se centra en desarrollar soluciones eficientes y atractivas que mejoren la experiencia del usuario.</span> <span className="fs-2 font-extrabold text-yellow-600" data-aos="fade-up"data-aos-delay="100">{"'}"}</span>
             </p>
-            <strong className="block font-extrabold text-red-700">
+            <strong className="block font-extrabold text-red-700" data-aos="zoom-out" data-aos-delay="1000">
                 {" "}
                 "SI LO PUEDES IMAGINAR, LO PUEDES PROGRAMAR"{" "}
               </strong>
@@ -31,27 +45,29 @@ export const Banner = () => {
                   to="https://www.linkedin.com/in/martin-cardozo-14b597238/"
                   blank
                 >
-                  <Button color="blue" className="m-1">
+                  <Button color="blue" className="m-1" data-aos="fade-down-right">
                     <i className="bi bi-linkedin fs-4"></i> LinKedin
                   </Button>
                 </Link>
                 <Link to="https://github.com/CardozoMartin">
-                  <Button color="red">
+                  <Button color="red" data-aos="fade-down-left">
                     <i className="bi bi-github fs-4"></i> Github
                   </Button>
                 </Link>
               </div>
-              <div className="mt-2">
+              <div className="mt-2" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                 <Button variant="outlined">
                   <p className="text-white">
                     {" "}
-                    <i className="bi bi-send-fill fs-4"></i> Contactame!!
+                    <i className="bi bi-send-fill fs-4 animate-bounce"></i> Contactame!!
                   </p>
                 </Button>
               </div>
             </div>
           </div>
-          <div className="mt-3">
+          <div className="mt-3" data-aos="fade-up"
+     data-aos-duration="3000">
           <img src={`${logo}`} alt="" />
           </div>
         </div>
