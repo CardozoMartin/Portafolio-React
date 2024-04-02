@@ -148,9 +148,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white hover:text-black font-extrabold">
-          Contact Us
-        </ListItem>
+       
       </Typography>
       <Link to="/certificados">
       <Typography

@@ -4,24 +4,28 @@ const Reflix = () => {
   const data = [
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQHDdMVkqAIiBQ/feedshare-shrink_800/0/1695854041079?e=1710979200&v=beta&t=MS6Mq4zgeu4YL3CCwcY1ipeiVL44bTpwmuAcZ6tE4_w",
+        "https://media.licdn.com/dms/image/D4D2DAQGkpcjyLX0xQQ/profile-treasury-image-shrink_1920_1920/0/1708302436530?e=1712685600&v=beta&t=GFB2dGbrBgLJlCrPu-C3SoUiw8EOy3JE8h99vDEk6pg",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQG8h28Q6n40tA/feedshare-shrink_800/0/1695854041321?e=1710979200&v=beta&t=oX4VW3u6QdjpfA0miEPY7eU4lc2_cuzfWkUANZdd7IQ",
+        "https://media.licdn.com/dms/image/D4D2DAQHo8nTM5MphXw/profile-treasury-image-shrink_1920_1920/0/1708302452991?e=1712685600&v=beta&t=mf7N_OxHBpocSceKENJivYIE1gcoUIXPqm2bqb0DNaI",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQFQW-eWU_rVXw/feedshare-shrink_800/0/1695854042204?e=1710979200&v=beta&t=yx0J0exWqnMZUuaKLuVJBZxeb7QUf817MAFkvXqginw",
+        "https://media.licdn.com/dms/image/D4D2DAQEILrcEPDducQ/profile-treasury-image-shrink_1920_1920/0/1708302462663?e=1712685600&v=beta&t=in6m_4dssCabD-FctrYqU0R9Unb6D763DhHbBHpicQw",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQGO7wAaCIVO4w/feedshare-shrink_800/0/1695854041134?e=1710979200&v=beta&t=2gmGfubiRQP67vXUSnHr8SComR9MxG-W5idRdoEHXPo",
+        "https://media.licdn.com/dms/image/D4D2DAQFEjVbagqWuXQ/profile-treasury-image-shrink_1920_1920/0/1708302473471?e=1712685600&v=beta&t=oKkonpn7eXjoLDjYDYgGodR_f7vTm4BF7meiEoKB5EY",
+    },
+    {
+      imgelink:
+        "https://media.licdn.com/dms/image/D4D2DAQHS8dUaHY0Wsw/profile-treasury-image-shrink_1920_1920/0/1708302487724?e=1712685600&v=beta&t=CEHMYVmVY09y_oBWaknVGG9vVGt4fcGie0Ls5XCQNis",
     },
   ];
 
   const [active, setActive] = useState(
-    "https://media.licdn.com/dms/image/D4D22AQE5QZIqA-4EYQ/feedshare-shrink_800/0/1695854041311?e=1710979200&v=beta&t=_CuMke6r2gPsZK3Ic_I6vKeEW-vTzm7gx3cld9VZvnM"
+    "https://media.licdn.com/dms/image/D4D2DAQGkpcjyLX0xQQ/profile-treasury-image-shrink_1920_1920/0/1708302436530?e=1712685600&v=beta&t=GFB2dGbrBgLJlCrPu-C3SoUiw8EOy3JE8h99vDEk6pg"
   );
   return (
     <>
@@ -143,7 +147,7 @@ const Reflix = () => {
 
                   <div className="mt-12 text-center">
                     <a
-                      href="#"
+                      href="https://reeflix.netlify.app"
                       className="inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-900 focus:outline-none focus:ring focus:ring-yellow-400"
                     >
                       Visitar sitio
@@ -160,7 +164,7 @@ const Reflix = () => {
         <div className="grid gap-4 items-center">
           <div className="flex justify-center">
             <img
-              className="h-auto w-100 max-w-full rounded-lg   md:h-[480px]"
+              className="h-auto w-500 max-w-full rounded-lg   md:h-[480px]"
               src={active}
               alt=""
             />

@@ -4,36 +4,33 @@ const AppRestaurante = () => {
   const data = [
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQGdi7tZMYcjvw/feedshare-shrink_800/0/1705108154432?e=1710979200&v=beta&t=IRO2mMGOJMOWGlnnlwIMQOFzMKRltgbQNL40goYJhIc",
+        "https://media.licdn.com/dms/image/D4D2DAQFhMOBWfzhjnQ/profile-treasury-image-shrink_1920_1920/0/1708122314525?e=1712689200&v=beta&t=1ocHzBif0SekThp5BdXGpdWxmxWWLYTauEbs0FymtTs",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQGkIfR_uk6cCg/feedshare-shrink_800/0/1705108154280?e=1710979200&v=beta&t=ibIqh9uVTvCGP2mtI7Pc_3ipemGWBuHj3z8smoQ3mAY",
+        "https://media.licdn.com/dms/image/D4D2DAQFmWVmQXokKIQ/profile-treasury-image-shrink_1920_1920/0/1708122354023?e=1712689200&v=beta&t=ISP6rx7IJzYARzJSV8WLHEYWNAOJCHtBYsSOWeF4SI0",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQGiIwfntKlX0A/feedshare-shrink_800/0/1705108154424?e=1710979200&v=beta&t=bPLMOBltJyPnLlW3CydaU7K8LVkb7kXSJZbRfIqAxH0",
+        "https://media.licdn.com/dms/image/D4D2DAQFJww6c50k9zg/profile-treasury-image-shrink_1920_1920/0/1708122388224?e=1712689200&v=beta&t=xBXl2GasIFa5396vQ9OLPfxPnYbyZt8XJnRu-2FRu94",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQEbejeHDWZS7g/feedshare-shrink_800/0/1705108154422?e=1710979200&v=beta&t=CjOSvcQmEtgiqRFfp6j-l72yEIp3hHyiEUAmDS-9vzA",
+        "https://media.licdn.com/dms/image/D4D2DAQGRhEmTViqWPg/profile-treasury-image-shrink_1920_1920/0/1708122422409?e=1712689200&v=beta&t=35Pali1oIGSUp9ALVL6mlc2R6e1kCSRv11Zk5aTREQ0",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQGp85x_S7Ov5A/feedshare-shrink_800/0/1705108154643?e=1710979200&v=beta&t=fJ5oM7tF9fxT2MONl0NP6J0U91NDhgE5AsR2GqxGnzA",
+        "https://media.licdn.com/dms/image/D4D2DAQHlmvtDz6WN1Q/profile-treasury-image-shrink_1920_1920/0/1708122458456?e=1712689200&v=beta&t=aFm29k16CEBfToYqm6lkSGrR4kTqmIUkIgFUy1nvOY0",
     },
     {
       imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQErQz2F7oPLNA/feedshare-shrink_800/0/1705108154472?e=1710979200&v=beta&t=aVmCreBcALs7BNN8MwBEFXU5_WuA1vUSvx5sK7SaQS0",
+        "https://media.licdn.com/dms/image/D4D2DAQHF7IUUfVpsdw/profile-treasury-image-shrink_1920_1920/0/1708122489393?e=1712689200&v=beta&t=r0MGi6oy43thIA9xWKoWQnwRxGEyiD-gBH4JsdA8_Tk",
     },
-    {
-      imgelink:
-        "https://media.licdn.com/dms/image/D4D22AQGpKHJhd2A51g/feedshare-shrink_800/0/1705108155212?e=1710979200&v=beta&t=_6AaH7D4jtqTusjx5TTEN6qKOLIIG9dE1sTisxvv43g",
-    },
+    
   ];
 
   const [active, setActive] = useState(
-    "https://media.licdn.com/dms/image/D4D22AQFugwEd-uxEow/feedshare-shrink_800/0/1705108154869?e=1710979200&v=beta&t=98JHqsdMoGNSm2xa-GdgxmLXBnTYYcNXpVZv64RolIQ"
+    "https://media.licdn.com/dms/image/D4D2DAQFhMOBWfzhjnQ/profile-treasury-image-shrink_1920_1920/0/1708122314525?e=1712689200&v=beta&t=1ocHzBif0SekThp5BdXGpdWxmxWWLYTauEbs0FymtTs"
   );
   return (
     <>
@@ -251,7 +248,7 @@ const AppRestaurante = () => {
 
           <div className="mt-12 text-center">
             <a
-              href="#"
+              href="https://grillandthrill.netlify.app/"
               className="inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-900 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Visitar sitio
