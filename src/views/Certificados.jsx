@@ -6,6 +6,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import InfoCard from "../components/ui/InfoCard";
 
 const Certificados = () => {
   return (
@@ -23,6 +24,8 @@ const Certificados = () => {
           
         </article>
       </section>
+
+      
     </>
   );
 };

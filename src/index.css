@@ -9,6 +9,15 @@
 }
 
 body {
+  overflow-x: hidden;
+}
+
+/* Opcional: Si tienes un contenedor específico que podría estar causando el desbordamiento */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     352deg,
@@ -23,3 +32,9 @@ main {
 h1 {
   font-size: 3rem !important;
 }
+.img-carrusel {
+  width: 100%;
+  height: 300px;
+
+}
+
