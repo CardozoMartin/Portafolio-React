@@ -53,7 +53,7 @@ const proyectos = [
         descripcion: "Reflix es una aplicacion web donde se puede ver peliculas y series. una app web que contiene la vista del cliente y la del administrador.",
         tecnologias: [icon1, icon2, icon3],
         imagen: [reflix, reflix2, reflix3, reflix4, reflix5],
-        link: ["https://github.com/CardozoMartin/grupo-n2-netflix", "", "https://reflix.netlify.app/"]
+        link: ["https://github.com/CardozoMartin/grupo-n2-netflix", "", "https://reeflix.netlify.app"]
     }
 ]
 
